@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Math table for children">
+  <meta name="keywords" content="HTML,CSS,bootstrap">
+  <meta name="author" content="Benjamin Park">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .hero {
+      text-align: center;
+      color: black
+    }
+
+
+    p {
+      text-size-adjust: 20px;
+    }
+  </style>
+
+</head>
+
+
+
+<title>Grid</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color:white;">
+
+
+
+
+
+<header>
+
+  <div></div>
+  <nav>
+    <a href="WEBSITEok.html"> HOME </a> |||
+  
+  </nav>
+</header>
+
+<!-- here start the Hero section -->
+
+<div id="hero">
+ 
+<h2>MATH FOR KIDS!<br>
+    
+   <h3><ins>Create a Multiplication Table! </ins><br></h3>
+ </h2>
+  <br>
+  <h3><strong>How to use:</strong> Write a number from 1-10 into the text field and click on GO</h3>
+  
+
+
+  <body>
+ 
+   <script>
+    function timesTable()
+    {
+        var values = document.getElementById('value1').value;
+    
+        var showTables = '';
+        for (var i=1; i<=10; i++) {
+           showTables += values + " x " + i +" = "+ values*i + "<br>";
+        }
+        var p_tables = document.getElementById('tables').innerHTML = showTables;
+        
+    }
+</script>
+    <input type="text" size=30 id=value1 name="value">
+    <button onclick="timesTable()">GO</button><br> <br>
+    <p id="tables"></p>
+    </div>
+      </body>
+
+
+  
+
+
+  <footer style="position: fixed; bottom: 0px; width: 100%; height: 30px; background-color:skyblue">
+    Copyright Benjamin Park
+    <em>For academic purposes only
+
+    </em>
+  </footer>
+  </body>
+
+</html>
